@@ -1,0 +1,111 @@
+<script>
+    // @ts-nocheck
+    import conf from "../tailwind-config";
+
+    let menuState = false;
+
+    const toggleBurger = () => {
+        menuState = !menuState;
+    };
+
+    const navLinks = [
+        ["Hem", "/"],
+        ["Vilka är vi", "/about"],
+        ["Projekt", "/projekt"],
+    ];
+
+    const onMouseEnter = (e) => {
+        e.target.style.fontVariationSettings = '"wght" 900, "wdth" 125';
+    };
+
+    const onMouseLeave = (e) => {
+        e.target.style.fontVariationSettings =
+            '"wght" var(--wght), "wdth" var(--wdth)';
+    };
+</script>
+
+<nav
+    class="sticky top-0 left-8 z-50 w-full shadow-md bg-palette-1/10
+                        backdrop-blur-sm p-8"
+>
+    <div class="flex justify-around items-center p-3">
+        <a class="text-lg font-extrabold text-palette-5" href="/"
+            >SOS barnbyar TEG</a
+        >
+
+        <div class="hidden space-x-12 items-center lg:flex">
+            {#each navLinks as [label, href]}
+                <a
+                    {href}
+                    class="relative text-palette-3 hover:text-palette-5
+                    duration-500 transition-[font] after:content-['']
+                    after:flex after:absolute after:bottom-0 after:left-0
+                    after:w-full after:h-[.1em] after:bg-palette-5
+                    after:opacity-0 after:scale-x-0 after:origin-left
+                    after:transition-[opacity,transform] after:duration-300
+                    hover:after:opacity-100 hover:after:scale-x-[1]"
+                    onmouseenter={onMouseEnter}
+                    onmouseleave={onMouseLeave}
+                >
+                    {label}
+                </a>
+            {/each}
+        </div>
+        <button
+            class="lg:hidden"
+            onclick={() => toggleBurger()}
+            aria-expanded={menuState}
+        >
+            <svg
+                width="32px"
+                height="32px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+            >
+                <path
+                    d="M5 8H13.75M5 12H19M10.25 16L19 16"
+                    stroke={conf.theme.colors["palette-5"]}
+                    strokeLinecap="round"
+                />
+            </svg>
+
+            <div
+                class={`
+                        flex flex-col items-center justify-center z-50
+                        fixed top-0 left-0 w-full h-0 bg-palette-2
+                        transition-[height,opacity] duration-200
+                        ${
+                            menuState
+                                ? "flex !h-screen opacity-90"
+                                : "opacity-0 h-0 pointer-events-none"
+                        }
+                    `}
+            >
+                <div
+                    class="w-full h-full flex flex-col items-center
+                                        justify-center [&>*]:my-6"
+                >
+                    {#each navLinks as [label, href]}
+                        <a
+                            {href}
+                            class="relative text-palette-3 hover:text-palette-5
+                            duration-500 transition-[font] after:content-['']
+                            after:flex after:absolute after:bottom-0
+                            after:left-0 after:w-full after:h-[.1em]
+                            after:bg-palette-5 after:opacity-0 after:scale-x-0
+                            after:origin-left
+                            after:transition-[opacity,transform]
+                            after:duration-300 hover:after:opacity-100
+                            hover:after:scale-x-[1]"
+                            onmouseenter={onMouseEnter}
+                            onmouseleave={onMouseLeave}
+                        >
+                            {label}
+                        </a>
+                    {/each}
+                </div>
+            </div>
+        </button>
+    </div>
+</nav>
