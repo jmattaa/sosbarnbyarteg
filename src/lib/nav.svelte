@@ -1,6 +1,8 @@
 <script>
     // @ts-nocheck
     import conf from "../tailwind-config";
+    import imagesos from './image-sos.png';
+
 
     let menuState = false;
 
@@ -28,10 +30,10 @@
     class="sticky top-0 left-8 z-50 w-full shadow-md bg-palette-1/10
                         backdrop-blur-sm p-8"
 >
-    <div class="flex justify-around items-center p-3">
-        <a class="text-lg font-extrabold text-palette-5" href="/"
-            >SOS barnbyar TEG</a
-        >
+    <div class="flex justify-around items-center p-3" style="margin-bottom: 10px;">
+        <a href="/" class="text-lg font-extrabold text-palette-5" onClick={() => window.location.href = '/index'}>
+            <img src={imagesos} alt="Logo" width="125" height="100" />
+        </a>
 
         <div class="hidden space-x-12 items-center lg:flex">
             {#each navLinks as [label, href]}
