@@ -95,6 +95,8 @@
         <p class="mt-8 text-base leading-6 text-center text-gray-400">
             © 2024 SOS Barnby TEG, Inc. All rights reserved.
         </p>
+        <p class="text-center text-gray-400">Credits to Jonathan Matta and Lakira Meddegoda Gedara</p>
     </div>
+
 </section>
 
