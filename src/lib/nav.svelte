@@ -14,6 +14,7 @@
         ["Hem", "/"],
         ["Vilka är vi", "/about"],
         ["Projekt", "/projekt"],
+        ["Villkor", "/terms"],
     ];
 
     const onMouseEnter = (e) => {
