@@ -10,6 +10,8 @@ const conf: import('tailwindcss').Config = {
             "palette-3": "#8dbfd8",
             "palette-4": "#68a7ca",
             "palette-5": "#438fbc",
+            "black": "#000000",
+            "white": "#ffffff",
         },
         extend: {},
     },
