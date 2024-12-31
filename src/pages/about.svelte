@@ -28,7 +28,7 @@
             email: "olivia.markhill@student.tabyenskilda.se",
         },
          {
-            namn: "Lakira Sasnima",
+            namn: "Lakira Meddegoda Gedara",
             roll: " Vice Sekreterare",
             klass: "N23b",
             email: "lakira.meddegoda@student.tabyenskilda.se",
