@@ -68,7 +68,10 @@
 
 <main class="container mx-auto">
     <h1 class="text-3xl">Vilka är vi?</h1>
-    <p>SOS Barnbyar TEG är en lokal organisation som arbetar för att ge barn en trygg uppväxt i en kärleksfull och säker miljö. Vårt huvudfokus är att hjälpa barn som har förlorat eller riskerar att förlora sina föräldrar, samt att stärka familjer och samhällen för att förebygga att barn överges.
+    <p>SOS Barnbyar TEG är en lokal organisation som arbetar för att ge barn en
+    trygg uppväxt i en kärleksfull och säker miljö. Vårt huvudfokus är att
+    hjälpa barn som har förlorat eller riskerar att förlora sina föräldrar,
+    samt att stärka familjer och samhällen för att förebygga att barn överges.
     </p>
     <h2 class="text-2xl">Styrelse</h2>
     <Table tableData={$styrelsen} />
