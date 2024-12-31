@@ -27,7 +27,7 @@
 </script>
 
 <nav
-    class="sticky top-0 left-8 z-50 w-full shadow-md bg-palette-1/10
+    class="sticky top-0 left-8 z-50 w-full shadow-md bg-palette-5/10
                         backdrop-blur-3xl"
 >
     <div
@@ -80,6 +80,7 @@
                 />
             </svg>
 
+            <!-- TODO: hitta ett sätt att kanske göra bg snyggare?? -->
             <div class={`
                         flex flex-col items-center justify-center z-50
                         fixed top-0 left-0 w-full h-0 bg-palette-2
