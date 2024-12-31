@@ -56,6 +56,11 @@
                 </a>
             {/each}
         </div>
+
+        <!-- NOTE: HELA mobil navbar linksen måste vara wrapped i button 
+                elementet. Det är för att kunna stänga då man klickar vart som 
+                helst i öppna navigation link skiten.
+        -->
         <button
             class="lg:hidden"
             onclick={() => toggleBurger()}
@@ -75,14 +80,13 @@
                 />
             </svg>
 
-            <div
-                class={`
+            <div class={`
                         flex flex-col items-center justify-center z-50
                         fixed top-0 left-0 w-full h-0 bg-palette-2
                         transition-[height,opacity] duration-200
                         ${
                             menuState
-                                ? "flex !h-screen opacity-90"
+                                ? "flex !h-screen"
                                 : "opacity-0 h-0 pointer-events-none"
                         }
                     `}
@@ -94,7 +98,7 @@
                     {#each navLinks as [label, href]}
                         <a
                             {href}
-                            class="relative text-palette-3 hover:text-palette-5
+                            class="relative text-black hover:text-palette-5
                             duration-500 transition-[font] after:content-['']
                             after:flex after:absolute after:bottom-0
                             after:left-0 after:w-full after:h-[.1em]
