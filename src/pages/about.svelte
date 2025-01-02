@@ -23,7 +23,7 @@
         },
          {
             namn: "Olivia Markhill",
-            roll: " sSkreterare",
+            roll: " Sekreterare",
             klass: "N22c",
             email: "olivia.markhill@student.tabyenskilda.se",
         },
@@ -75,4 +75,4 @@
     </p>
     <h2 class="text-2xl">Styrelse</h2>
     <Table tableData={$styrelsen} />
-</main>
+</main> 
