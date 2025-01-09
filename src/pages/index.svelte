@@ -1,7 +1,7 @@
 <section class="relative h-screen flex flex-col items-center justify-center text-center text-white ">
     <div class="video-docker absolute top-0 left-0 w-full h-full overflow-hidden">
         <video class="min-w-full min-h-full absolute object-cover"
-            src="https://sos-barnbyar.se/app/uploads/2024/11/sosbarnbyar-kull-hero-desktop-2.mp4"
+            src="sosbarnbyar-hero.mp4"
             autoplay muted loop></video>
     </div>
     <div class="video-content space-y-2 z-10">
