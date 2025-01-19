@@ -5,7 +5,7 @@
             autoplay muted loop></video>
     </div>
     <div class="video-content space-y-2 z-10">
-        <h1 class="font-extraboldbold text-6xl text-white">SOS Barnby TEG</h1>
+        <h1 class="font-extraboldbold text-6xl text-white">SOS Barnbyar TEG</h1>
         <h3 class="font-light text-3xl text-white">För barnens framtid!</h3>
     </div>
 </section>
