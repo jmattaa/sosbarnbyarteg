@@ -17,12 +17,13 @@
     ];
 
     const onMouseEnter = (e) => {
-        e.target.style.fontVariationSettings = '"wght" 900, "wdth" 125';
+        e.target.style.fontVariationSettings =
+            '"MONO" .3, "CASL" var(--casl), "wght" 800, "slnt" .8, "CRSV" var(--CRSV)';
     };
 
     const onMouseLeave = (e) => {
         e.target.style.fontVariationSettings =
-            '"wght" var(--wght), "wdth" var(--wdth)';
+            '"MONO" var(--mono), "CASL" var(--casl), "wght" var(--wght), "slnt" var(--slnt), "CRSV" var(--CRSV)';
     };
 </script>
 
@@ -30,11 +31,8 @@
     class="sticky top-0 left-8 z-50 w-full shadow-md bg-palette-5/10
                         backdrop-blur-3xl"
 >
-    <div
-        class="flex justify-around items-center p-3">
-        <a
-            href="/"
-            class="text-lg font-extrabold text-palette-5">
+    <div class="flex justify-around items-center p-3">
+        <a href="/" class="text-lg font-extrabold text-palette-5">
             <img src={imagesos} alt="Logo" width="125" height="100" />
         </a>
 
@@ -43,7 +41,7 @@
                 <a
                     {href}
                     class="relative text-palette-3 hover:text-palette-5
-                    duration-500 transition-[font] after:content-['']
+                    duration-500 transition-all after:content-['']
                     after:flex after:absolute after:bottom-0 after:left-0
                     after:w-full after:h-[.1em] after:bg-palette-5
                     after:opacity-0 after:scale-x-0 after:origin-left
@@ -81,7 +79,8 @@
             </svg>
 
             <!-- TODO: hitta ett sätt att kanske göra bg snyggare?? -->
-            <div class={`
+            <div
+                class={`
                         flex flex-col items-center justify-center z-50
                         fixed top-0 left-0 w-full h-0 bg-palette-2
                         transition-[height,opacity] duration-200
@@ -100,7 +99,7 @@
                         <a
                             {href}
                             class="relative text-black hover:text-palette-5
-                            duration-500 transition-[font] after:content-['']
+                            duration-500 transition-all after:content-['']
                             after:flex after:absolute after:bottom-0
                             after:left-0 after:w-full after:h-[.1em]
                             after:bg-palette-5 after:opacity-0 after:scale-x-0

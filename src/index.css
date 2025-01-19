@@ -3,26 +3,34 @@
 @tailwind utilities;
 
 :root {
-    --wght: 400;
-    --wdth: 100;
+    --mono: 0;
+    --casl: .4;
+    --wght: 590;
+    --slnt: 0;
+    --CRSV: .4;
 }
-
 
 @font-face {
-    font-family: "Open Sans";
-    src: local("Open Sans"),
-        url("./fonts/OpenSans.ttf") format("truetype");
+    font-family: "Recursive";
+    src:
+        local("Recursive"),
+        url("/fonts/Recursive_VF_1.085.woff2") format("woff2");
     font-style: normal;
+    font-weight: 100 900;
 }
+
 
 html {
     scroll-behavior: smooth;
-    font-family: "Open Sans", sans-serif;
-    font-variation-settings:
-        "wght" var(--wght),
-        "wdth" var(--wdth);
-}
 
+    font-family: "Recursive";
+    font-variation-settings:
+        "MONO" var(--mono),
+        "CASL" var(--casl),
+        "wght" var(--wght),
+        "slnt" var(--slnt),
+        "CRSV" var(--CRSV);
+}
 *,
 *::before,
 *::after {
