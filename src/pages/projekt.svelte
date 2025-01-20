@@ -8,8 +8,9 @@
             </div>
             <div class="order-1 bg-gray-400 rounded-lg shadow-xl w-5/12 px-6 py-4">
                 <h3 class="mb-3 font-bold text-gray-800 text-xl">Albanien</h3>
-                <p class="text-gray-700 leading-tight">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Vestibulum in nisi commodo, aliquet velit ac, dapibus elit.</p>
+                <p class="text-gray-700 leading-tight">
+                    
+                </p>
             </div>
         </div>
         <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
@@ -19,8 +20,7 @@
             </div>
             <div class="order-1 bg-gray-400 rounded-lg shadow-xl w-5/12 px-6 py-4">
                 <h3 class="mb-3 font-bold text-gray-800 text-xl">Nord Makedonien</h3>
-                <p class="text-gray-700 leading-tight">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Vestibulum in nisi commodo, aliquet velit ac, dapibus elit.</p>
+                <p class="text-gray-700 leading-tight">L.</p>
             </div>
         </div>
         <div class="mb-8 flex justify-between items-center w-full right-timeline">
@@ -29,9 +29,8 @@
                 <h1 class="mx-auto font-semibold text-lg text-white">3</h1>
             </div>
             <div class="order-1 bg-gray-400 rounded-lg shadow-xl w-5/12 px-6 py-4">
-                <h3 class="mb-3 font-bold text-gray-800 text-xl">Event Title</h3>
-                <p class="text-gray-700 leading-tight">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Vestibulum in nisi commodo, aliquet velit ac, dapibus elit.</p>
+                <h3 class="mb-3 font-bold text-gray-800 text-xl">•Fikaansvarig</h3>
+                <p class="text-gray-700 leading-tight"></p>
             </div>
         </div>
     </div>
