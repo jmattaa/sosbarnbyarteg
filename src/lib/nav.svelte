@@ -1,7 +1,7 @@
 <script>
     // @ts-nocheck
     import conf from "../tailwind-config";
-    import imagesos from "./image-sos.png";
+    import imagesos from "../assets/image-sos.png";
 
     let menuState = false;
 

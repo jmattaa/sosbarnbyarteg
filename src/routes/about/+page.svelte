@@ -1,6 +1,6 @@
 <script>
     import { writable } from "svelte/store";
-    import Table from "../lib/table.svelte";
+    import Table from "$lib/table.svelte";
 
     const styrelsen = writable([
         {

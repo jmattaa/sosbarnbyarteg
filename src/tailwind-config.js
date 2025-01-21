@@ -1,8 +1,7 @@
-const conf: import('tailwindcss').Config = {
-    content: [
-        "./index.html",
-        "./src/**/*.{html,js,ts,jsx,tsx,svelte}",
-    ],
+
+/** @type {import('tailwindcss').Config} */
+const conf = {
+    content: ['./src/**/*.{html,js,svelte,ts}'],
     theme: {
         colors: {
             "palette-1": "#d8e9f3",
