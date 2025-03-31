@@ -1,6 +1,5 @@
 <script>
 	// @ts-nocheck
-	import conf from '../tailwind-config';
 	import imagesos from '../assets/image-sos.png';
 	import { page } from '$app/stores';
 
@@ -41,14 +40,9 @@
 			{#each navLinks as [label, href]}
 				<a
 					{href}
-					class={`relative text-palette-3 transition-all
-                    duration-500 after:absolute after:bottom-0
-                    after:left-0 after:flex after:h-[.1em] after:w-full
-                    after:origin-left after:scale-x-0 after:bg-palette-5
-                    after:opacity-0 after:transition-[opacity,transform] after:duration-300
-                    after:content-[''] hover:text-palette-5
-                    hover:after:scale-x-[1] hover:after:opacity-100
-                    ${$page.url.pathname === href ? 'text-palette-5 after:scale-x-[1] after:opacity-100' : ''}`}
+					class={`relative text-black transition-all
+                    duration-500 hover:text-palette-5 px-4 py-2 rounded
+                    ${$page.url.pathname === href ? 'bg-palette-5/40' : ''}`}
 					onmouseenter={onMouseEnter}
 					onmouseleave={onMouseLeave}
 				>
@@ -71,7 +65,7 @@
 			>
 				<path
 					d="M5 8H13.75M5 12H19M10.25 16L19 16"
-					stroke={conf.theme.colors['palette-5']}
+					stroke="black"
 					strokeLinecap="round"
 				/>
 			</svg>
@@ -82,12 +76,12 @@
                         fixed left-0 top-0 z-50 flex
                         h-0 w-full flex-col items-center justify-center bg-palette-2
                         transition-[height,opacity] duration-200
-                        ${menuState ? 'flex !h-screen' : 'pointer-events-none h-0 opacity-0'}
+                        ${menuState ? 'flex h-screen!' : 'pointer-events-none h-0 opacity-0'}
                     `}
 			>
 				<div
 					class="flex h-full w-full flex-col items-center
-                                        justify-center [&>*]:my-6"
+                                        justify-center *:my-6"
 				>
 					{#each navLinks as [label, href]}
 						<a
@@ -99,7 +93,7 @@
                             after:bg-palette-5 after:opacity-0 after:transition-[opacity,transform]
                             after:duration-300
                             after:content-['']
-                            hover:text-palette-5 hover:after:scale-x-[1]
+                            hover:text-palette-5 hover:after:scale-x-1
                             hover:after:opacity-100"
 							onmouseenter={onMouseEnter}
 							onmouseleave={onMouseLeave}
