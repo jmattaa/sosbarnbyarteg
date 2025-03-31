@@ -3,7 +3,7 @@
 </script>
 
 <div class="overflow-x-auto p-4">
-    <table class="table-auto w-full border-collapse border border-gray-300 min-w-max shadow-lg rounded-lg">
+    <table class="table-auto w-full border-collapse border border-gray-300 min-w-max rounded-lg">
         <thead>
             <tr>
                 {#each Object.keys(tableData[0]) as columnHeading}
