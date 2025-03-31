@@ -3,7 +3,7 @@
         ["Om oss", "/about"],
         ["Föreningen", "/about"],
         ["Kontakt", "/about"],
-        ["Villkor", "/terms"],
+        ["Stadgar", "/terms"],
     ];
 
     const onMouseEnter = (e) => {
