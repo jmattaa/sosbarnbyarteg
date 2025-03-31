@@ -3,7 +3,7 @@
         ["Om oss", "/about"],
         ["Föreningen", "/about"],
         ["Kontakt", "/about"],
-        ["Villkor", "/terms"],
+        ["Stadgar", "/terms"],
     ];
 
     const onMouseEnter = (e) => {
@@ -18,7 +18,7 @@
 
 <section class="bg-white">
     <div
-        class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8"
+        class="max-w-(--breakpoint-xl) px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8"
     >
         <div class="flex flex-wrap justify-center -mx-5 -my-2 gap-x-4">
             {#each links as [label, href]}
@@ -30,7 +30,7 @@
                     after:w-full after:h-[.1em] after:bg-palette-5
                     after:opacity-0 after:scale-x-0 after:origin-left
                     after:transition-[opacity,transform] after:duration-300
-                    hover:after:opacity-100 hover:after:scale-x-[1]"
+                    hover:after:opacity-100 hover:after:scale-x-1"
                     onmouseenter={onMouseEnter}
                     onmouseleave={onMouseLeave}
                 >

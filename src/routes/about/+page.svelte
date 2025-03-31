@@ -53,7 +53,7 @@
         },
         {
             namn: "Livia Galsgaard",
-            roll: " Superiggare",
+            roll: " Superiggaren",
             klass: "N23c",
             email: "livia.galsgaard@student.tabyenskilda.se",
         },
