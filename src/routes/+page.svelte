@@ -4,7 +4,7 @@
 	</div>
 	<div class="z-10 space-y-2">
 		<h1 class="font-extraboldbold text-6xl text-white">SOS Barnbyar TEG</h1>
-		<h3 class="text-sm text-palette-2">(Skopje, Nord Makedonien på bilden)</h3>
+		<h3 class="text-sm text-palette-2">(Skopje, Nordmakedonien på bilden)</h3>
 	</div>
 </section>
 
